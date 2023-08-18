@@ -1,0 +1,314 @@
+\hypertarget{funzioni_8h}{\section{Riferimenti per il file studenti\+\_\+lib/funzioni.h}
+\label{funzioni_8h}\index{studenti\+\_\+lib/funzioni.\+h@{studenti\+\_\+lib/funzioni.\+h}}
+}
+{\ttfamily \#include $<$stdio.\+h$>$}\\*
+{\ttfamily \#include $<$stdlib.\+h$>$}\\*
+\subsection*{Strutture dati}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structdata}{data}
+\item 
+struct \hyperlink{structstudenti}{studenti}
+\end{DoxyCompactItemize}
+\subsection*{Definizioni}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{funzioni_8h_a95b015e2f596dc86ea9220be04427e1a}{M\+A\+X\+\_\+\+W\+O\+R\+D}~50
+\item 
+\#define \hyperlink{funzioni_8h_aabc33985f13b39c5520ade1044cadfa6}{C\+F\+\_\+\+L\+E\+N\+G\+H\+T}~17
+\end{DoxyCompactItemize}
+\subsection*{Tipi enumerati (enum)}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{funzioni_8h_ae0d92465be0a5da3dee5aa7bef3309fc}{genere} \{ \hyperlink{funzioni_8h_ae0d92465be0a5da3dee5aa7bef3309fca9cb1193d9510ab528411f28a04ebaec1}{maschio}, 
+\hyperlink{funzioni_8h_ae0d92465be0a5da3dee5aa7bef3309fca8994d706eee09b6669056af8a63dfed1}{femmina}
+ \}
+\begin{DoxyCompactList}\small\item\em Definizione di un nuovo tipo enumerato il quale indica il sesso di ogni studente. \end{DoxyCompactList}\item 
+enum \hyperlink{funzioni_8h_a1d397448840c071a37812f1f38978398}{boolean} \{ \hyperlink{funzioni_8h_a1d397448840c071a37812f1f38978398aa1e095cc966dbecf6a0d8aad75348d1a}{F\+A\+L\+S\+E}, 
+\hyperlink{funzioni_8h_a1d397448840c071a37812f1f38978398aa82764c3079aea4e60c80e45befbb839}{T\+R\+U\+E}
+ \}
+\begin{DoxyCompactList}\small\item\em Definizione di un nuovo tipo enumerato booleano. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Funzioni}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structstudenti}{studenti} $\ast$ \hyperlink{funzioni_8h_a991c1f4e91fb7506d346ec50a778f3c9}{aquisizione} (int $\ast$dim)
+\begin{DoxyCompactList}\small\item\em Questa funzione ci permette di effettuare l'aquisizione da tastiera di un vettore di studenti. \end{DoxyCompactList}\item 
+\hyperlink{structstudenti}{studenti} $\ast$ \hyperlink{funzioni_8h_a315d0b0b7efd1d71098dbc848d64a47c}{autoaquisizione} (void)
+\begin{DoxyCompactList}\small\item\em Questa funzione ci permette di effettuare l'autoaquisizione di un vettore di studenti avvolorato direttamente da codice Si noti che la dimensione e nota a priori (5) quindi non ci sarà bisogno di tale valore di ritorno. \end{DoxyCompactList}\item 
+\hyperlink{funzioni_8h_a1d397448840c071a37812f1f38978398}{boolean} \hyperlink{funzioni_8h_a29f0182f6256f2f23e634c72c709e4b2}{array\+\_\+not\+\_\+null} (\hyperlink{structstudenti}{studenti} $\ast$s)
+\begin{DoxyCompactList}\small\item\em \hyperlink{funzioni_8c_a29f0182f6256f2f23e634c72c709e4b2}{array\+\_\+not\+\_\+null(studenti $\ast$s)} \end{DoxyCompactList}\item 
+void \hyperlink{funzioni_8h_aaacc87bb10bea5760972688caed1cd30}{stampa} (\hyperlink{structstudenti}{studenti} $\ast$s, int dim)
+\begin{DoxyCompactList}\small\item\em Questa e una procedura di stampa\+: visualizza a schermo tutte le caratteristiche di ogni studente. \end{DoxyCompactList}\item 
+\hyperlink{funzioni_8h_a1d397448840c071a37812f1f38978398}{boolean} \hyperlink{funzioni_8h_a4874e0a951ff4d3b665d6f075845b1ab}{controllo} (int anno, int eta)
+\begin{DoxyCompactList}\small\item\em Questa funzione controlla se l'età inserita corrisponda all' anno. \end{DoxyCompactList}\item 
+int \hyperlink{funzioni_8h_ab5052fe18a0bface5fdb181c419b81de}{eta\+\_\+max} (\hyperlink{structstudenti}{studenti} $\ast$s, int dim)
+\begin{DoxyCompactList}\small\item\em Questa funzione calcola l'eta massima in un array di studenti. \end{DoxyCompactList}\item 
+int \hyperlink{funzioni_8h_a0582507d42fabb5acb36c5c8c6665a12}{eta\+\_\+min} (\hyperlink{structstudenti}{studenti} $\ast$s, int dim)
+\begin{DoxyCompactList}\small\item\em Questa funzione calcola l'eta minima in un array di studenti. \end{DoxyCompactList}\item 
+\hyperlink{funzioni_8h_a1d397448840c071a37812f1f38978398}{boolean} \hyperlink{funzioni_8h_aebf3c452a3d17ecf24591f55d8a06c64}{controllo\+\_\+cf} (char $\ast$codice\+\_\+fiscale)
+\begin{DoxyCompactList}\small\item\em Questa funzione controlla che una stringa abbia lunghezza 16 (nel nostro caso il codice fiscale) \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Documentazione delle definizioni}
+\hypertarget{funzioni_8h_aabc33985f13b39c5520ade1044cadfa6}{\index{funzioni.\+h@{funzioni.\+h}!C\+F\+\_\+\+L\+E\+N\+G\+H\+T@{C\+F\+\_\+\+L\+E\+N\+G\+H\+T}}
+\index{C\+F\+\_\+\+L\+E\+N\+G\+H\+T@{C\+F\+\_\+\+L\+E\+N\+G\+H\+T}!funzioni.\+h@{funzioni.\+h}}
+\subsubsection[{C\+F\+\_\+\+L\+E\+N\+G\+H\+T}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\+F\+\_\+\+L\+E\+N\+G\+H\+T~17}}\label{funzioni_8h_aabc33985f13b39c5520ade1044cadfa6}
+
+
+Definizione alla linea 22 del file funzioni.\+h.
+
+\hypertarget{funzioni_8h_a95b015e2f596dc86ea9220be04427e1a}{\index{funzioni.\+h@{funzioni.\+h}!M\+A\+X\+\_\+\+W\+O\+R\+D@{M\+A\+X\+\_\+\+W\+O\+R\+D}}
+\index{M\+A\+X\+\_\+\+W\+O\+R\+D@{M\+A\+X\+\_\+\+W\+O\+R\+D}!funzioni.\+h@{funzioni.\+h}}
+\subsubsection[{M\+A\+X\+\_\+\+W\+O\+R\+D}]{\setlength{\rightskip}{0pt plus 5cm}\#define M\+A\+X\+\_\+\+W\+O\+R\+D~50}}\label{funzioni_8h_a95b015e2f596dc86ea9220be04427e1a}
+
+
+Definizione alla linea 14 del file funzioni.\+h.
+
+
+
+\subsection{Documentazione dei tipi enumerati}
+\hypertarget{funzioni_8h_a1d397448840c071a37812f1f38978398}{\index{funzioni.\+h@{funzioni.\+h}!boolean@{boolean}}
+\index{boolean@{boolean}!funzioni.\+h@{funzioni.\+h}}
+\subsubsection[{boolean}]{\setlength{\rightskip}{0pt plus 5cm}enum enum {\bf F\+A\+L\+S\+E} {\bf T\+R\+U\+E} {\bf boolean}}}\label{funzioni_8h_a1d397448840c071a37812f1f38978398}
+
+
+Definizione di un nuovo tipo enumerato booleano. 
+
+\begin{Desc}
+\item[Valori del tipo enumerato]\par
+\begin{description}
+\index{F\+A\+L\+S\+E@{F\+A\+L\+S\+E}!funzioni.\+h@{funzioni.\+h}}\index{funzioni.\+h@{funzioni.\+h}!F\+A\+L\+S\+E@{F\+A\+L\+S\+E}}\item[{\em 
+\hypertarget{funzioni_8h_a1d397448840c071a37812f1f38978398aa1e095cc966dbecf6a0d8aad75348d1a}{F\+A\+L\+S\+E}\label{funzioni_8h_a1d397448840c071a37812f1f38978398aa1e095cc966dbecf6a0d8aad75348d1a}
+}]\index{T\+R\+U\+E@{T\+R\+U\+E}!funzioni.\+h@{funzioni.\+h}}\index{funzioni.\+h@{funzioni.\+h}!T\+R\+U\+E@{T\+R\+U\+E}}\item[{\em 
+\hypertarget{funzioni_8h_a1d397448840c071a37812f1f38978398aa82764c3079aea4e60c80e45befbb839}{T\+R\+U\+E}\label{funzioni_8h_a1d397448840c071a37812f1f38978398aa82764c3079aea4e60c80e45befbb839}
+}]\end{description}
+\end{Desc}
+
+
+Definizione alla linea 40 del file funzioni.\+h.
+
+\hypertarget{funzioni_8h_ae0d92465be0a5da3dee5aa7bef3309fc}{\index{funzioni.\+h@{funzioni.\+h}!genere@{genere}}
+\index{genere@{genere}!funzioni.\+h@{funzioni.\+h}}
+\subsubsection[{genere}]{\setlength{\rightskip}{0pt plus 5cm}enum enum {\bf maschio} {\bf femmina} {\bf genere}}}\label{funzioni_8h_ae0d92465be0a5da3dee5aa7bef3309fc}
+
+
+Definizione di un nuovo tipo enumerato il quale indica il sesso di ogni studente. 
+
+\begin{Desc}
+\item[Valori del tipo enumerato]\par
+\begin{description}
+\index{maschio@{maschio}!funzioni.\+h@{funzioni.\+h}}\index{funzioni.\+h@{funzioni.\+h}!maschio@{maschio}}\item[{\em 
+\hypertarget{funzioni_8h_ae0d92465be0a5da3dee5aa7bef3309fca9cb1193d9510ab528411f28a04ebaec1}{maschio}\label{funzioni_8h_ae0d92465be0a5da3dee5aa7bef3309fca9cb1193d9510ab528411f28a04ebaec1}
+}]\index{femmina@{femmina}!funzioni.\+h@{funzioni.\+h}}\index{funzioni.\+h@{funzioni.\+h}!femmina@{femmina}}\item[{\em 
+\hypertarget{funzioni_8h_ae0d92465be0a5da3dee5aa7bef3309fca8994d706eee09b6669056af8a63dfed1}{femmina}\label{funzioni_8h_ae0d92465be0a5da3dee5aa7bef3309fca8994d706eee09b6669056af8a63dfed1}
+}]\end{description}
+\end{Desc}
+
+
+Definizione alla linea 31 del file funzioni.\+h.
+
+
+
+\subsection{Documentazione delle funzioni}
+\hypertarget{funzioni_8h_a991c1f4e91fb7506d346ec50a778f3c9}{\index{funzioni.\+h@{funzioni.\+h}!aquisizione@{aquisizione}}
+\index{aquisizione@{aquisizione}!funzioni.\+h@{funzioni.\+h}}
+\subsubsection[{aquisizione}]{\setlength{\rightskip}{0pt plus 5cm}{\bf studenti}$\ast$ aquisizione (
+\begin{DoxyParamCaption}
+\item[{int $\ast$}]{dim}
+\end{DoxyParamCaption}
+)}}\label{funzioni_8h_a991c1f4e91fb7506d346ec50a778f3c9}
+
+
+Questa funzione ci permette di effettuare l'aquisizione da tastiera di un vettore di studenti. 
+
+Si noti che la dimensione e passata per riferimento.
+
+
+\begin{DoxyParams}{Parametri}
+{\em dim} & E' un puntatore a intero la quale dovrà contenere la dimensione dell'array inserito da tastiera.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Restituisce}
+Ritorna un puntatore a struttura aquisito da tastiera. 
+\end{DoxyReturn}
+
+
+Definizione alla linea 19 del file funzioni.\+c.
+
+\hypertarget{funzioni_8h_a29f0182f6256f2f23e634c72c709e4b2}{\index{funzioni.\+h@{funzioni.\+h}!array\+\_\+not\+\_\+null@{array\+\_\+not\+\_\+null}}
+\index{array\+\_\+not\+\_\+null@{array\+\_\+not\+\_\+null}!funzioni.\+h@{funzioni.\+h}}
+\subsubsection[{array\+\_\+not\+\_\+null}]{\setlength{\rightskip}{0pt plus 5cm}{\bf boolean} array\+\_\+not\+\_\+null (
+\begin{DoxyParamCaption}
+\item[{{\bf studenti} $\ast$}]{s}
+\end{DoxyParamCaption}
+)}}\label{funzioni_8h_a29f0182f6256f2f23e634c72c709e4b2}
+
+
+\hyperlink{funzioni_8c_a29f0182f6256f2f23e634c72c709e4b2}{array\+\_\+not\+\_\+null(studenti $\ast$s)} 
+
+Questa funzione ci permette di controllare se una struttura di tipo studenti (passato dal main) sia uguale o diverso da N\+U\+L\+L. Nel caso in cui sarà uguale verrà stampato un messaggio di errore.
+
+
+\begin{DoxyParams}{Parametri}
+{\em s} & puntatore a struttura studenti si vuole effettuare il controllo\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Restituisce}
+ritorna un valore booleano\+: \begin{DoxyVerb}'TRUE' nel caso in cui la struct non sia NULL
+'FALSE' altrimenti (=NULL)\end{DoxyVerb}
+ 
+\end{DoxyReturn}
+
+
+Definizione alla linea 187 del file funzioni.\+c.
+
+\hypertarget{funzioni_8h_a315d0b0b7efd1d71098dbc848d64a47c}{\index{funzioni.\+h@{funzioni.\+h}!autoaquisizione@{autoaquisizione}}
+\index{autoaquisizione@{autoaquisizione}!funzioni.\+h@{funzioni.\+h}}
+\subsubsection[{autoaquisizione}]{\setlength{\rightskip}{0pt plus 5cm}{\bf studenti}$\ast$ autoaquisizione (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{funzioni_8h_a315d0b0b7efd1d71098dbc848d64a47c}
+
+
+Questa funzione ci permette di effettuare l'autoaquisizione di un vettore di studenti avvolorato direttamente da codice Si noti che la dimensione e nota a priori (5) quindi non ci sarà bisogno di tale valore di ritorno. 
+
+(Avvalorata nel main)
+
+\begin{DoxyReturn}{Restituisce}
+Ritorna un puntatore a struttura. 
+\end{DoxyReturn}
+
+
+Definizione alla linea 113 del file funzioni.\+c.
+
+\hypertarget{funzioni_8h_a4874e0a951ff4d3b665d6f075845b1ab}{\index{funzioni.\+h@{funzioni.\+h}!controllo@{controllo}}
+\index{controllo@{controllo}!funzioni.\+h@{funzioni.\+h}}
+\subsubsection[{controllo}]{\setlength{\rightskip}{0pt plus 5cm}{\bf boolean} controllo (
+\begin{DoxyParamCaption}
+\item[{int}]{anno, }
+\item[{int}]{eta}
+\end{DoxyParamCaption}
+)}}\label{funzioni_8h_a4874e0a951ff4d3b665d6f075845b1ab}
+
+
+Questa funzione controlla se l'età inserita corrisponda all' anno. 
+
+(Uno studente nato nel 1993 dovrà avere necessariamente 20 o 21 anni)
+
+
+\begin{DoxyParams}{Parametri}
+{\em anno} & anno di nascita \\
+\hline
+{\em eta} & età\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Restituisce}
+un valore booleano \begin{DoxyVerb}'TRUE' se l'età corrisponde all' anno
+'FALSE' altrimenti\end{DoxyVerb}
+ 
+\end{DoxyReturn}
+
+
+Definizione alla linea 318 del file funzioni.\+c.
+
+\hypertarget{funzioni_8h_aebf3c452a3d17ecf24591f55d8a06c64}{\index{funzioni.\+h@{funzioni.\+h}!controllo\+\_\+cf@{controllo\+\_\+cf}}
+\index{controllo\+\_\+cf@{controllo\+\_\+cf}!funzioni.\+h@{funzioni.\+h}}
+\subsubsection[{controllo\+\_\+cf}]{\setlength{\rightskip}{0pt plus 5cm}{\bf boolean} controllo\+\_\+cf (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{codice\+\_\+fiscale}
+\end{DoxyParamCaption}
+)}}\label{funzioni_8h_aebf3c452a3d17ecf24591f55d8a06c64}
+
+
+Questa funzione controlla che una stringa abbia lunghezza 16 (nel nostro caso il codice fiscale) 
+
+
+\begin{DoxyParams}{Parametri}
+{\em codice\+\_\+fiscale} & viene passato direttamente il C\+F e non l'intera struttura\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Restituisce}
+un valore booleano \begin{DoxyVerb}'TRUE' se il CF ha effettivamente lunghezza pari a 16
+'FALSE' altrimenti\end{DoxyVerb}
+ 
+\end{DoxyReturn}
+
+
+Definizione alla linea 341 del file funzioni.\+c.
+
+\hypertarget{funzioni_8h_ab5052fe18a0bface5fdb181c419b81de}{\index{funzioni.\+h@{funzioni.\+h}!eta\+\_\+max@{eta\+\_\+max}}
+\index{eta\+\_\+max@{eta\+\_\+max}!funzioni.\+h@{funzioni.\+h}}
+\subsubsection[{eta\+\_\+max}]{\setlength{\rightskip}{0pt plus 5cm}int eta\+\_\+max (
+\begin{DoxyParamCaption}
+\item[{{\bf studenti} $\ast$}]{s, }
+\item[{int}]{dim}
+\end{DoxyParamCaption}
+)}}\label{funzioni_8h_ab5052fe18a0bface5fdb181c419b81de}
+
+
+Questa funzione calcola l'eta massima in un array di studenti. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em s} & puntatore a struct studenti \\
+\hline
+{\em dim} & intero il quale indica la dimensione di tale array\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Restituisce}
+ritorna l'età massima 
+\end{DoxyReturn}
+
+
+Definizione alla linea 262 del file funzioni.\+c.
+
+\hypertarget{funzioni_8h_a0582507d42fabb5acb36c5c8c6665a12}{\index{funzioni.\+h@{funzioni.\+h}!eta\+\_\+min@{eta\+\_\+min}}
+\index{eta\+\_\+min@{eta\+\_\+min}!funzioni.\+h@{funzioni.\+h}}
+\subsubsection[{eta\+\_\+min}]{\setlength{\rightskip}{0pt plus 5cm}int eta\+\_\+min (
+\begin{DoxyParamCaption}
+\item[{{\bf studenti} $\ast$}]{s, }
+\item[{int}]{dim}
+\end{DoxyParamCaption}
+)}}\label{funzioni_8h_a0582507d42fabb5acb36c5c8c6665a12}
+
+
+Questa funzione calcola l'eta minima in un array di studenti. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em s} & puntatore a struct studenti \\
+\hline
+{\em dim} & intero il quale indica la dimensione di tale array\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Restituisce}
+ritorna l'età minima 
+\end{DoxyReturn}
+
+
+Definizione alla linea 289 del file funzioni.\+c.
+
+\hypertarget{funzioni_8h_aaacc87bb10bea5760972688caed1cd30}{\index{funzioni.\+h@{funzioni.\+h}!stampa@{stampa}}
+\index{stampa@{stampa}!funzioni.\+h@{funzioni.\+h}}
+\subsubsection[{stampa}]{\setlength{\rightskip}{0pt plus 5cm}void stampa (
+\begin{DoxyParamCaption}
+\item[{{\bf studenti} $\ast$}]{s, }
+\item[{int}]{dim}
+\end{DoxyParamCaption}
+)}}\label{funzioni_8h_aaacc87bb10bea5760972688caed1cd30}
+
+
+Questa e una procedura di stampa\+: visualizza a schermo tutte le caratteristiche di ogni studente. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em s} & puntatore alla struttura studenit \\
+\hline
+{\em dim} & intero il quale indica la dimensione del vettore \\
+\hline
+\end{DoxyParams}
+
+
+Definizione alla linea 215 del file funzioni.\+c.
+
